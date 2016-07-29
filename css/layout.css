@@ -51,7 +51,7 @@ header .banner {
    vertical-align: middle;
    margin: 0 auto;
    width: 85%;
-   padding-bottom: 30px;s
+   padding-bottom: 30px;
    text-align: center;
 }
 
@@ -59,7 +59,7 @@ header .banner-text { width: 100%; }
 
 header .banner-text h1 {
    font: 10px/1.1em 'opensans-bold', sans-serif;
-   color: #fff;
+   color: #000;
    letter-spacing: -2px;
    margin: 0 auto 18px auto;
    text-shadow: 0px 1px 3px rgba(0, 0, 0, .8);
@@ -67,7 +67,7 @@ header .banner-text h1 {
 
 header .banner-text h3 {
    font: 18px/1.9em 'librebaskerville-regular', serif;
-   color: #fff;
+   color: #000;
    margin: 0 auto;
    width: 70%;
    text-shadow: 0px 1px 3px rgba(0, 0, 0, .8);
@@ -148,7 +148,7 @@ header .scrolldown a:hover { color: #0090f0; }
    top: 0;
 }
 
-.opaque { background-color: #333; }
+.opaque { background-color: #000; }
 
 /* hide toggle button */
 #nav-wrap > a.mobile-btn { display: none; }
@@ -196,7 +196,6 @@ ul#nav li.current a { color: #0090f0; }
 /* ------------------------------------------------------------------ */
 
 #about {
-   background: #2B2B2B;
    padding-top: 96px;
    padding-bottom: 66px;
    overflow: hidden;
@@ -207,7 +206,7 @@ ul#nav li.current a { color: #0090f0; }
 
 #about h2 {
    font: 22px/30px 'opensans-bold', sans-serif;
-   color: #fff;
+   color: #000;
    margin-bottom: 12px;
 }
 #about p {
@@ -216,9 +215,9 @@ ul#nav li.current a { color: #0090f0; }
 }
 #about .profile-pic {
    position: relative;
-   width: 120px;
-   height: 120px;
-   border-radius: 100%;
+   width: 220px;
+   height: 220px;
+   border-radius: 2%;
 }
 #about .contact-details { width: 41.66667%; }
 #about .download {
@@ -421,12 +420,12 @@ ul#nav li.current a { color: #0090f0; }
 /* e. Portfolio Section
 /* ------------------------------------------------------------------ */
 
-#portfolio {
+#music {
    background: #ebeeee;
    padding-top: 90px;
    padding-bottom: 60px;
 }
-#portfolio h1 {
+#music h1 {
    font: 15px/24px 'opensans-semibold', sans-serif;
    text-transform: uppercase;
    letter-spacing: 1px;
@@ -886,7 +885,7 @@ footer .social-links li:first-child { margin-left: 0; }
 .typed-cursor { opacity: 0; }
 
 header .banner-text h2 {
-   color: #fff;
+   color: #000;
    letter-spacing: -2px;
    margin: 0 auto 18px auto;
    text-shadow: 0px 1px 3px rgba(0, 0, 0, .8);
@@ -913,4 +912,10 @@ header .banner-text h2 {
   border-radius: 100%;
   width: 100px;
   height: 80px;
+}
+
+.profile-pic-main {
+ height: 200px;
+ width: 200px;
+ border-radius: 100%;
 }

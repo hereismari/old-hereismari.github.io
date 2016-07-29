@@ -24,21 +24,19 @@ var lineColor = 'rgba(255,0,100,.2)';
 var particleCount = 0;
 var particleList = {}; 
 
-
-
 function draw() {
 	// FOR PARICLES NOT LINES
 	//clear();
 	
 	// UPDATE PARTICLE SYSTEM
-	if (system){
-		system.update();
-	}
+//	if (system){
+//		system.update();
+//	}
 		
 	// FOR FADING LINES
-	if (fadeStage){
-		fade();	
-	}
+//	if (fadeStage){
+//		fade();	
+//	}
 }
 
 function initParticleSystem(){
@@ -167,8 +165,6 @@ function particleLine(p) {
     ctx.stroke();
 	
 }
-
-
 
 // Chooses Grayscale or color image
 function setColor(targ){
