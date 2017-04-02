@@ -1,444 +1,293 @@
+
 <!DOCTYPE html>
 
-<!--
-  Original code by Ceevee10 (http://www.styleshout.com/free-templates/ceevee/).
-  Edited by Marianne Linhares.
-================================================== -->
-
-<html class="no-js" lang="en">
+<html class='no-js' lang='en'>
 <head>
 
-  <meta charset="utf-8">
+  <meta charset='utf-8'>
 	<title>Marianne Linhares</title>
-	<meta name="description" content="Marianne Linhares's Website">
-	<meta name="author" content="Marianne and Ceevee10">
+	<meta name='description' content="Marianne Linhares's Website">
+	<meta name='author' content='Marianne'>
 
-  <!-- Many Lines
-   ================================================== -->
-  <script type="text/javascript" src="http://www.google.com/jsapi"></script>
-  <script type="text/javascript">
-    google.load("jquery", "1.3.2");
-    google.load("jqueryui", "1.7.2");
-  </script>
+   <!-- mobile specific metas -->
+	<meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1'>
 
-  <script src="js/adapted.particles.js" type="text/javascript"></script>
-  <script src="js/adapted.library.js" type="text/javascript"></script>
+	<!-- css -->
+  <link rel='stylesheet' href='css/style.css'>
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
 
-  <script>
-    //get a reference to the canvas
-    $(document).ready(function() {
-      init();
-      initParticleSystem();
-    });
-  </script>
+   <!-- js -->
+   <script src='js/jquery.js'></script>
+   <script src='js/jquery.browser.js'></script>
 
-   <!-- Mobile Specific Metas
-   ================================================== -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <script src='js/script.js' type='text/javascript'></script>
 
-	<!-- CSS
-    ================================================== -->
-  <link rel="stylesheet" href="css/default.css">
-	<link rel="stylesheet" href="css/layout.css">
-  <link rel="stylesheet" href="css/media-queries.css">
-  <link rel="stylesheet" href="css/magnific-popup.css">
-
-   <!-- JS
-   ================================================== -->
-   <script src="js/jquery.js"></script>
-   <script src="js/jquery.browser.js"></script>
-
-   <script src="js/jquery.flexslider.js"></script>
-   <script src="js/waypoints.js"></script>
-   <script src="js/jquery.fittext.js"></script>
-   <script src="js/magnific-popup.js"></script>
-   <script src="js/init.js"></script>
-
-  <script src="js/typed.js" type="text/javascript"></script>
-	<script src="js/modernizr.js"></script>
-
-  <script src='js/marianne-script.js' type='text/javascript'></script>
-
-   <!-- Favicons
-	================================================== -->
-	<link rel="shortcut icon" href="favicon.png" >
+   <!-- icon -->
+   <link rel='shortcut icon' href='imgs/icon.png' >
 
 </head>
 
 <body>
 
-    <canvas id="canvas">&nbsp;</canvas>
+  <section id='intro'>
 
-   <!-- Header
-   ================================================== -->
-   <header id="home">
+    <h1>Marianne Linhares Monteiro</h1>
+    <h4>mariannelinharesm@gmail.com</h4>
 
-      <nav id="nav-wrap">
+    <div id='intro'>
 
-        <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
-	      <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+      <img id='profile-pic'  class='img-circle' src='imgs/profile.jpg'/>
 
-         <ul id="nav" class="nav">
-            <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
-            <li><a class="smoothscroll" href="#about">About</a></li>
-	          <li><a class="smoothscroll" href="#resume">Resume</a></li>
-	          <li><a class="smoothscroll" href="#music">Music</a></li>
-         </ul> <!-- end #nav -->
-      </nav> <!-- end #nav-wrap -->
-
-      <div class="row banner">
-		<img class="profile-pic-main"  src="images/profile3.gif" alt="" />
-         <div class="banner-text">
-            <div id="hello-message"></div>
-            <hr />
-            <ul class="social">
-              <li><a href="https://github.com/mari-linhares"><i class="fa fa-github"></i></a></li>
-              <li><a href="https://mariannelinhares.wordpress.com"><i class="fa fa-comments"></i></a></li>
-              <li><a href="mailto:mariannelinharesm@gmail.com"><i class="fa fa-envelope"></i></a></li>
-              <li><a href="https://www.linkedin.com/in/mariannelinharesm"><i class="fa fa-linkedin"></i></a></li>
-              <li><a href="https://plus.google.com/u/0/110616469354929111219/"><i class="fa fa-google-plus"></i></a></li>
-              <li><a href="https://www.facebook.com/marianne.linhares"><i class="fa fa-facebook"></i></a></li>
-              <li><a href="https://twitter.com/hereismari"><i class="fa fa-twitter"></i></a></li>
-              <li><a href="https://mariannelinhares.wordpress.com"><i class="fa fa-wordpress"></i></a></li>
-            </ul>
-         </div>
-      </div>
-
-      <p class="scrolldown">
-         <a class="orange" href="#about"><i class="icon-down-circle"></i></a>
+      <p>
+        I'm an undergraduate student of Computer Science at UFCG
+        (2014 - current), passionate about education, music, math, AI
+        and of course code!
       </p>
 
-   </header> <!-- Header End -->
+      <p class='sad-but-true'>
+        I also enjoy pizza, a quality time with friends, animais in general,
+        psychology... but sadly that's not the focus of this website :(
+      </p>
 
+      <p> This website has following structure:
+          <a href='#intro'>intro</a>, <a href='#resume'>basic resume</a>,
+          <a href='#fun'>personal projects.
+      </p>
 
-   <!-- About Section
-   ================================================== -->
-   <section id="about">
+      <p id='contact'>
+          <a href='https://github.com/mari-linhares'><i class='fa fa-github'></i></a>
+          <a href='https://mariannelinhares.wordpress.com'><i class='fa fa-wordpress'></i></a>
+          <a href='https://www.linkedin.com/in/mariannelinharesm'><i class='fa fa-linkedin'></i></a>
+          <a href='https://www.facebook.com/marianne.linhares'><i class='fa fa-facebook'></i></a>
+          <a href='https://plus.google.com/u/0/110616469354929111219/'><i class='fa fa-google-plus'></i></a>
+          <a href='https://twitter.com/hereismari'><i class='fa fa-twitter'></i></a>
+          <a href='mailto:mariannelinharesm@gmail.com'><i class='fa fa-envelope'></i></a>
+      </p>
 
-      <div class="row">
+    </div>
 
-         <div class="three columns">
+  </section>
 
-            <img class="profile-pic"  src="images/profile2.gif" alt="" />
+  <hr/>
 
-         </div>
+  <section id="resume">
 
-         <div class="nine columns main-col">
+    <h1> Basic Resume </h1>
+    <p>
+      please email me for full resume, or see
+      <a href='#intro'>contact session</a> for more info
+    </p>
 
-            <h2>About Me</h2>
+    <div class="row work">
+      <h3>Work Experience</h3>
+      <div>
 
-            <p> Hi, I'm Marianne! I'm an undergraduate Student of
-                Computer Science at UFCG and currently a fellow coach
-                of the Paraíba State Olympiad in Informatics.
-            </p>
+        <h4>Google</h4>
+        <p>DevRel intern with TensorFlow <span> &bull; </span>
+        <em class="date">May 2017 - Current</em></p>
 
-            <p>
-              The topics that I'm interested are: Teaching, Competitive Programming,
-              Women in Computer Science, AI, Big Data.
-            </p>
+        <h4>Outreachy program with OpenStack Sahara</h4>
+        <p>SWE intern<span> &bull; </span>
+        <em class="date">Dec 2016 - Feb 2017</em></p>
+        <p>
+          Sahara allows remote HDFS, local HDFS, Swift, and Manila as
+          data sources (Dec 2016). However, there's no clean abstraction
+          around them, and the code to deal with them is often very difficult
+          to read and modify. I’ve created a clean abstraction of a data
+          source and a job binary that each type can implement differently
+          depending on its own needs.
+        </p>
+        <p>
+          About 2540 lines of code were added or replaced with this change,
+          and about 690 lines of code were removed.
+          More about it
+          <a href='https://blueprints.launchpad.net/sahara/+spec/data-source-plugin'>
+            here
+          </a>.
+        </p>
 
-            <div class="row">
+        <h4>Paraíba State Olympiad in Informatics - OPI</h4>
+        <p>Volunteer/Fellow Coach<span> &bull; </span>
+        <em class="date">Jun 2015 - Apr 2016 / May 2016 - Present</em></p>
+        <p>
+          Developed teaching material and classes in order to teach about
+          competitive programming concepts to high school students and
+          undergraduate students. Also an auxiliar teacher in the
+          Advanced Algorithms class of UFCG 2015.2, 2016.1 and 2016.2.
+        </p>
+        <p>
+          OPI already awarded more than 950 students with medals and diplomas,
+          from these only 14 awarded in the first edition and 195 awarded
+          in IX edition (2016).
+        </p>
 
-               <div class="columns contact-details">
+        <h4>Distributed Systems Laboratory</h4>
+        <p>Student Researcher<span> &bull; </span>
+        <em class="date">Jan 2015 - Apr 2016</em></p>
+        <p>
+          Researched about Data processing, Big Data, Cloud Computing and Cloud Monitoring.
+          More details in my CV and github.
+        </p>
 
-                  <h2>Contact Details</h2>
-                  <p class="address">
-						   <span>Marianne Linhares Monteiro</span><br>
-						   <span>Brazil, Paraíba, Campina Grande<br>
-                     </span><br>
-						   <span>+55 (83) 98752-0750</span><br>
-                     <span>mariannelinharesm@gmail.com</span>
-					   </p>
-
-               </div>
-            </div> <!-- end row -->
-         </div> <!-- end .main-col -->
       </div>
-
-   </section> <!-- About Section End-->
-
-   <!-- Resume Section
-   ================================================== -->
-   <section id="resume">
-
-      <!-- Education ------------------------------------------------->
-      <div class="row education">
-
-         <div class="three columns header-col">
-            <h1><span>Education</span></h1>
-         </div>
-
-         <div class="nine columns main-col">
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <a href='http://www.ufcg.edu.br/index1.php'><h3 class='ufcg'>Federal University of Campina Grande (UFCG)</h3></a>
-                  <p class="info">Undergraduate student of Computer Science<span>&bull;</span> <em class="date">2014 - expected 2018</em></p>
-
-                  <p>
-                    Studied concepts of:
-                    <ul>
-                      <li> Object-Oriented Programming </li>
-                      <li> Algorithms </li>
-                      <li> Data Structures </li>
-                      <li> Teaching </li>
-                      <li> Intro. to Big Data and Data Processing </li>
-                      <li> Intro. to Cloud Computing and Distributed Systems </li>
-                      <li> Intro. to Machine Learning </li>
-                    </ul>
-                  </p>
-
-               </div>
-
-            </div> <!-- item end -->
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <a href="https://www.coursera.org/learn/machine-learning">Independent Course - coursera</a>
-                  <p class="info">Taught by Andrew Ng, Stanford University<span>&bull;</span> <em class="date">May 2016 - Aug 2016</em></p>
-
-                  <p>
-                    This course provides a broad introduction to machine
-                    learning, datamining, and statistical pattern recognition.
-                    Topics include: supervised learning, unsupervised learning,
-                    best practices in machine learning (bias/variance theory;
-                    innovation process in machine learning and AI). The course will also
-                    draw from numerous case studies and applications: building
-                    smart robots (perception, control), text understanding,
-                    computer vision, medical informatics, audio, database mining
-                    , and other areas.
-                  </p>
-
-               </div>
-
-            </div> <!-- item end -->
-
-         </div> <!-- main-col end -->
-
-      </div> <!-- End Education -->
-
-
-      <!-- Work
-      ----------------------------------------------->
-      <div class="row work">
-
-         <div class="three columns header-col">
-            <h1><span>Work</span></h1>
-         </div>
-
-         <div class="nine columns main-col">
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <a href="https://www.lsd.ufcg.edu.br"><h3>Distributed Systems Laboratory</h3></a>
-                  <p class="info">Student Researcher<span>&bull;</span> <em class="date">Jan 2015 - Apr 2016</em></p>
-                    Researched about Data processing, Big Data, Cloud Computing and Cloud Monitoring.
-                    More details in my CV and github.
-                  <p>
-
-                  </p>
-
-               </div>
-
-            </div> <!-- item end -->
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>Paraíba State Olympiad in Informatics</h3>
-                  <p class="info">Volunteer/Fellow Coach<span>&bull;</span> <em class="date">Jun 2015 - Apr 2016 / May 2016 - Present</em></p>
-
-                  <p>
-                    Teach about some basic programming concepts to children and
-                    about about logic, algorithm design and problem solving to
-                    high school and bachelor students in order to train them to
-                    programming competitions.
-                  </p>
-                  <p>
-                    Also an auxiliar teacher in the Advanced Algorithms class of UFCG 2015.2.
-                  </p>
-
-               </div>
-
-            </div> <!-- item end -->
-         </div> <!-- main-col end -->
-      </div> <!-- End Work -->
-    </section>
-      <!-- Music
-      ---------------------------------------------->
-
-    <section id="music">
-	<!-- Soundcloud
-   	 ------------------------------------------------->
-         <div class="row education">
-
-            <div class="three columns header-col">
-               <h1><span>Soundcloud - my covers</span></h1>
-               <center><a href="https://soundcloud.com/mariannelinhares"><img id="soundcloud" src="images/profile-guitar.png"></a></center>
-            </div>
-
-            <div class="nine columns main-col">
-               <div class="row item">
-                  <div class="twelve columns">
-					<iframe width="100%" height="250" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/22991287&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
-                  </div>
-               </div> <!-- item end -->
-            </div> <!-- main-col end -->
-         </div> <!-- End soundcloud -->
-
-
-         <!-- Spotify ----------------------------------------------->
-         <div class="row work">
-
-            <div class="three columns header-col">
-               <h1><span>Spotify - my playlist to code</span></h1>
-               <iframe src="https://embed.spotify.com/follow/1/?uri=spotify:user:12170462499&size=detail&theme=light" width="300" height="56" scrolling="no" frameborder="0" style="border:none; overflow:hidden;" allowtransparency="true"></iframe>
-            </div>
-
-            <div class="nine columns main-col">
-               <div class="row item">
-                  <div class="twelve columns">
-                    <iframe src="https://embed.spotify.com/?uri=spotify%3Auser%3A12170462499%3Aplaylist%3A4H7GurbTINb0MX1g2H6uhn&theme=white" width="100%" height="300" frameborder="0" allowtransparency="true"></iframe>
-                  </div>
-               </div> <!-- item end -->
-            </div> <!-- main-col end -->
-         </div> <!-- End Work -->
-
-         <!-- Youtube
-         ----------------------------------------------->
-
-       <div class="row">
-
-          <div class="twelve columns collapsed">
-
-             <h1>Youtube - Band cover.</h1>
-
-             <!-- portfolio-wrapper -->
-             <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
-
-           	   <div class="columns portfolio-item">
-                   <div class="item-wrap">
-
-                      <a href="#modal-01" title="">
-                         <img alt="" src="http://img.youtube.com/vi/GgCcizjMqU4/0.jpg">
-                         <div class="overlay">
-                            <div class="portfolio-item-meta">
-           					      <h5>Sistema Fodão</h5>
-                               <p>Hypnotize - Extensão Vitrola</p>
-           					   </div>
-                         </div>
-                         <div class="link-icon"><i class="icon-plus"></i></div>
-                      </a>
-                   </div>
-           		</div> <!-- item end -->
-
-              <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-02" title="">
-                        <img alt="" src="http://img.youtube.com/vi/szGauL6QZa0/0.jpg">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-                         <h5>Just some friends having fun</h5>
-                              <p>Queens of the Stone Age - In my head</p>
-                      </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-                  </div>
-             </div> <!-- item end -->
-
-             <div class="columns portfolio-item">
-                 <div class="item-wrap">
-
-                    <a href="#modal-03" title="">
-                       <img alt="" src="http://img.youtube.com/vi/vJ4z-BVYYd8/0.jpg">
-                       <div class="overlay">
-                          <div class="portfolio-item-meta">
-                        <h5>Sistema Fodão</h5>
-                             <p>Sugar</p>
-                     </div>
-                       </div>
-                       <div class="link-icon"><i class="icon-plus"></i></div>
-                    </a>
-                 </div>
-               </div> <!-- item end -->
-            </div> <!-- portfolio-wrapper end -->
-          </div> <!-- twelve columns end -->
-
-          <!-- Modal Popup -->
-          <div id="modal-01" class="popup-modal mfp-hide">
- 		         <div class="description-box">
-               <iframe type="text/html" width="100%" height="390" src="http://www.youtube.com/embed/GgCcizjMqU4" frameborder="0"></iframe>
-             </div>
-
-             <div class="link-box">
-   		        <a class="popup-modal-dismiss">Close</a>
-             </div>
- 	         </div><!-- modal-01 End-->
-
-           <div id="modal-02" class="popup-modal mfp-hide">
-  		         <div class="description-box">
-                <iframe type="text/html" width="100%" height="390" src="http://www.youtube.com/embed/szGauL6QZa0" frameborder="0"></iframe>
-              </div>
-
-              <div class="link-box">
-    		        <a class="popup-modal-dismiss">Close</a>
-              </div>
-  	        </div><!-- modal-02 End-->
-
-            <div id="modal-03" class="popup-modal mfp-hide">
-   		         <div class="description-box">
-                 <iframe type="text/html" width="100%" height="390" src="http://www.youtube.com/embed/vJ4z-BVYYd8" frameborder="0"></iframe>
-               </div>
-
-               <div class="link-box">
-     		        <a class="popup-modal-dismiss">Close</a>
-               </div>
-   	        </div><!-- modal-03 End-->
-       </div> <!-- row End -->
-      </section>
-
-   <!-- footer
-   ================================================== -->
-   <footer>
-
-      <div class="row">
-
-         <div class="twelve columns">
-
-           <ul class="social-links">
-
-               <li><a href="https://github.com/mari-linhares"><i class="fa fa-github"></i></a></li>
-             <li><a href="mailto:mariannelinharesm@gmail.com"><i class="fa fa-envelope"></i></a></li>
-             <li><a href="https://www.linkedin.com/in/mariannelinharesm"><i class="fa fa-linkedin"></i></a></li>
-             <li><a href="https://plus.google.com/u/0/110616469354929111219/"><i class="fa fa-google-plus"></i></a></li>
-             <li><a href="https://www.facebook.com/marianne.linhares"><i class="fa fa-facebook"></i></a></li>
-             <li><a href="https://twitter.com/hereismari"><i class="fa fa-twitter"></i></a></li>
-             <li><a href="https://mariannelinhares.wordpress.com"><i class="fa fa-wordpress"></i></a></li>
-           </ul>
-
-            <ul class="copyright">
-               <li>&copy; Copyright 2014 CeeVee</li>
-               <li>Design by <a title="Styleshout" href="http://www.styleshout.com/">Styleshout</a></li>
-               <li>Edited by Marianne</li>
-               <li>Also thank you so much to <a href="http://open.adaptedstudio.com/"> open area</a> for this awesome many lines implementation!</li>
-            </ul>
-
-         </div>
-
-         <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
+    </div>
+
+    <div>
+      <h3> Education </h3>
+      <div>
+
+        <h4>Federal University of Campina Grande (UFCG)</h4>
+        <p>Undergraduate student of Computer Science<span> &bull; </span>
+        <em class="date">2014 - expected 2018</em></p>
+
+        <p>Favorite classes </p>
+        <ul>
+          <li> Data Structures </li>
+          <li> Teaching </li>
+          <li> Operational Systems </l1>
+          <li> Machine Learning (Data Analysis 2) </li>
+        </ul>
 
       </div>
 
-   </footer> <!-- Footer End-->
+      <div>
+        <a href="https://www.coursera.org/learn/machine-learning">
+          Machine Learning - Independent Course (Coursera)
+        </a>
+        <p class="info">Taught by Andrew Ng, Stanford University<span> &bull; </span>
+        <em class="date">May 2016 - Aug 2016</em></p>
+      </div>
+
+
+    <div>
+      <h3>Awards</h3>
+      <div>
+        <ul>
+          <li> Bronze Medal - XXI Campina Grande’s Mathematical
+               Olympiad 2009 </li>
+          <li> Gold Medal - Paraíba State Olympiad in Informatics 2014 </li>
+          <li> Silver Medal - Paraíba State Olympiad in Informatics 2015 </li>
+          <li> Participated of Brazilian Olympics Informatic 2015,
+               45º in the final ranking of 1119 competitors </li>
+          <li> Honorable Mention at ACM 2015, 20º in Brazilian First Phase
+               and qualified to Second Phase with the
+               team Pera, ja ta valendo? </li>
+          <li> Honorable Mention at ACM 2015, 25º in Brazilian Second Phase
+               with the team Pera, ja ta valendo? </li>
+          <li> Pwn2Win CTF 2016 - 9º place of the world and 1º place of
+               Brazil with the team Hackiticos UFCG </li>
+          <li> Silver Medal - Paraíba State Olympiad in Informatics 2016 </li>
+          <li> Honorable Mention at ACM 2016, 48º in Brazilian First Phase </li>
+        </ul>
+      </div>
+    </div>
+
+  </section>
+
+  <section id="fun">
+
+    <h1>Personal Projects</h1>
+    <p>
+      These are projects I did just for fun,
+      not related to any entity or company.
+
+      <br>
+      For classes / work projects see
+      <a href='http://github.com/mari-linhares/'>my github</a>.
+    </p>
+    <div>
+
+        <h4>Dev. projects</h4>
+        <hr/>
+        <div>
+
+          <h5>Small projects</h5>
+          <div>
+
+            <a href = 'https://github.com/mari-linhares/spotifyoutube'
+               class='fun-box inline'>
+              <img src='imgs/spotifyoutube.gif'/>
+              <p>SpotifYoutube</p>
+            </a>
+
+            <a href = 'https://github.com/mari-linhares/spotify-flask'
+               class='fun-box inline'>
+              <img src='imgs/wip.gif'/>
+              <p>Spotify Flask [WIP]</p>
+            </a>
+
+            <a href = 'https://github.com/mari-linhares/UVaCPTracker'
+               class='fun-box inline'>
+              <img src='imgs/uvacptracker.gif'/>
+              <p>UVaCPTracker</p>
+            </a>
+
+            <a href = 'https://github.com/mari-linhares/a2oj-as-csv'
+               class='fun-box inline'>
+              <img src='imgs/a2ojascsv.png'/>
+              <p>A2OJ as CSV</p>
+            </a>
+          </div>
+
+          <hr/>
+
+          <h5>Long term projects</h5>
+          <div>
+            <a href = 'https://github.com/mari-linhares/DeepLearning'
+               class='fun-box inline'>
+              <img src='imgs/deep.png'/>
+              <p>Deep Learning</p>
+            </a>
+
+            <a href = 'https://github.com/mari-linhares/Programming'
+               class='fun-box inline'>
+              <img src='imgs/cp.jpg'/>
+              <p>Algorithms</p>
+            </a>
+          </div>
+        </div>
+
+        <h4> Music </h4>
+        <hr/>
+
+        <div>
+
+          <i class='music-box inline'>
+            <iframe scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/22991287&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+            <p>Soundcloud - my music covers</p>
+          </i>
+
+          <i class='music-box inline'>
+            <iframe src="https://embed.spotify.com/?uri=spotify%3Auser%3A12170462499%3Aplaylist%3A4H7GurbTINb0MX1g2H6uhn&theme=white" width="100%" height="300" frameborder="0" allowtransparency="true"></iframe>
+            <p>Spotify - my playlist to code</p>
+          </i>
+
+          <i class='music-box inline'>
+            <iframe type="text/html" src="http://www.youtube.com/embed/GgCcizjMqU4" frameborder="0"></iframe>
+            <p class = 'sad-but-true'>
+              Sistema fodão was my first band, we were a cover of
+              System of a Down and Rage Against the machine
+              (if you know portuguese, sorry about the band's name)</p>
+            <p> Sistema fodão (SOAD) - Hypnotize</p>
+          </i>
+
+          <i class='music-box inline'>
+            <iframe type="text/html" src="http://www.youtube.com/embed/vJ4z-BVYYd8" frameborder="0"></iframe>
+            <p class = 'sad-but-true'>
+              Sistema fodão was my first band, we were a cover of
+              System of a Down and Rage Against the machine
+              (if you know portuguese, sorry about the band's name)</p>
+            <p> Sistema fodão (SOAD) - Sugar</p>
+          </i>
+
+          <i class='music-box inline'>
+            <iframe type="text/html" src="http://www.youtube.com/embed/szGauL6QZa0" frameborder="0"></iframe>
+            <p class = 'sad-but-true'>Awesome day \o/, playing just for fun</p>
+            <p>Queens of the stone age - In my Head</p>
+          </i>
+
+      </div>
+  </section>
 
 </body>
 
