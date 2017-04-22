@@ -11,8 +11,16 @@ a {
   color: #745296;
 }
 
+a {
+  text-decoration: none;
+}
+
 a:hover {
   color: #632A50;
+}
+
+.small {
+  font-size: 10px;
 }
 
 /* ------------------ intro ----------------- */
