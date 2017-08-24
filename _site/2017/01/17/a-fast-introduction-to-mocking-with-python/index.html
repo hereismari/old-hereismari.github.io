@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="r">
+
+    <title>A fast introduction to Mocking with Python - Marianne Linhares Monteiro</title>
+
+    <link rel="canonical" href="http://localhost:4000/2017/01/17/a-fast-introduction-to-mocking-with-python/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    
+    <link rel="stylesheet" href="/css/clean-blog.css">
+
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
+
+    <!-- Custom Fonts -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+
+<body>
+
+    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+        <div class="container topnav">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand topnav" href="http://mari-linhares.github.io/">Marianne Linhares Monteiro</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/blog/">Blog</a>
+                    </li>
+                    <li>
+                        <a href="/">About me</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/mari-linhares">Github</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+    <!-- Post Header -->
+<header class="intro-header" style="background-image: url('/img/forest.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>A fast introduction to Mocking with Python</h1>
+                    
+                    <span class="meta">Posted by Marianne Linhares on January 17, 2017</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+				<h1 id="a-fast-introduction-to-mocking-with-python">A fast introduction to Mocking with Python</h1>
+
+<p>Hey there, This post goal is to talk a little about Mocking, and how to do that (hopefully well) in Python. These are the main topics of this article, have fun!</p>
+
+<ol>
+  <li>Are you mocking me, what is mock?</li>
+  <li>Mocking use cases</li>
+  <li>How to mock in Python?</li>
+  <li>References</li>
+</ol>
+
+<h1 id="are-you-mocking-me-what-is-mock">Are you mocking me, what is mock?</h1>
+
+<p>Mocking consists basically in abstracting some part of your code (function call, variable, API request, system call, …) and instead of using the real thing, just pretend that it is there and it works correctly.</p>
+
+<p>Why do you want this? Mocking is mainly used for unit testing, why do we run unit tests? To be more confident that some particular and well-defined part of you code is working as it should. But what if <strong>part A</strong> of the code, that you’re interested in testing with unit tests, has a dependency with <strong>complex part B</strong>? You definitely don’t want the unit test testing the <strong>complex part B</strong>, <strong>complex part B</strong> will have its own unit tests, right? So how can we abstract <strong>complex part B</strong>? That’s right, Mocking it!!!</p>
+
+<p>“In short, mocking is creating objects that simulate the behavior of real objects.”[2]</p>
+
+<h1 id="mocking-use-cases">Mocking use cases</h1>
+
+<p> There’s a lot of valid use cases for Mocking, all of the ones I’ll say are related to unit tests because it is the mainly general use case for Mocking.</p>
+
+<ul>
+  <li>As I said in the last section, a good reason to mock a part of your code is in order to maintain unit tests isolated and concise. It’s not a good thing to have a unit test that tests a lot of things at once. You’re probably will prefer to break this big unit test in smaller ones, and mock can offer a cool way to do it!</li>
+  <li>Sometimes part of the code you want to test is just not working as it should (not ready yet, unstable, for some reason not available, failing), mocking in this case, is a good thing, because you can test the already stable part of the code.</li>
+  <li>To actually run some part of the code can be too costly or have some side effect not desired (API requests, create files, writing in files, system calls), so mocking can really help you test the code without worrying with these.</li>
+  <li>Test unpredictable code, good unit tests are always executed expecting the same values, random values can be mocked to avoid randomness in the unit tests.</li>
+  <li>Mock a certain complex object that you don’t really need to have it entirely, you can mock only the parts that interest you in the context.</li>
+  <li>And many more cases…</li>
+</ul>
+
+<p><strong>Important:</strong> Mocking is very powerful, but do it “the right way” is not that simple and involves practice and experience, a lot Mocking (especially bad mocking) can actually make your unit tests less effective.</p>
+
+<h1 id="how-to-mock-in-python">How to mock in Python?</h1>
+
+<blockquote>
+  <p>Using the mock package [5].</p>
+</blockquote>
+
+<h2 id="what-can-you-do-with-the-mock-package">What can you do with the mock package?</h2>
+
+<ul>
+  <li><strong>Pretend to be anything you want!</strong></li>
+</ul>
+
+<pre><code class="language-python">import mock
+anything = mock.Mock(return_value=3)
+print anything() # 3
+</code></pre>
+
+<p>“Mock is a flexible mock object intended to replace the use of stubs and test
+doubles throughout your code”. The Mock Class can be used to repeat basically
+anything in the code, in the example above it represents a function that returns</p>
+<ol>
+  <li>Other useful things you can define for the Mock objects are:</li>
+</ol>
+
+<ul>
+  <li>
+    <p><em>“side_effect</em>: A function to be called whenever the Mock is called. See the <a href="https://docs.python.org/3/library/unittest.mock.html#unittest.mock.Mock.side_effect"><code>side_effect</code></a> attribute. Useful for raising exceptions or dynamically changing return values. If <em>side_effect</em> is an iterable then each call to the mock will return the next value from the iterable.”</p>
+  </li>
+  <li>
+    <p><em>“return_value</em>: The value returned when the mock is called. By default this is a new Mock (created on first access). “</p>
+  </li>
+  <li>
+    <p><em>“name</em>: If the mock has a name then it will be used in the repr of the mock. This can be useful for debugging. The name is propagated to child mocks.”</p>
+  </li>
+</ul>
+
+<p>An alternative for Mock Class is MagicMock, “<code>MagicMock</code> is a subclass of <code>[Mock</code>](https://docs.python.org/3/library/unittest.mock.html#unittest.mock.Mock) with default implementations of most of the magic methods. You can use <code>MagicMock</code> without having to configure the magic methods yourself.”</p>
+
+<ul>
+  <li><strong>Pretend to be a particular thing (object, function, call, …)</strong></li>
+</ul>
+
+<pre><code class="language-python">from mock import create_autospec
+
+def any_function(a, b, c): pass
+
+mock_function = create_autospec(any_function, return_value='unicorn')
+print mock_function(1, 2, 3) # returns 'unicorn'
+mock_function.assert_called_once_with(1, 2, 3)
+print mock_function('wrong arguments') # error
+</code></pre>
+
+<p>“The <code>[mock.create_autospec</code>](http://www.voidspace.org.uk/python/mock/helpers.html#autospeccing) method creates a functionally equivalent instance to the provided class. What this means, practically speaking, is that when the returned instance is interacted with, it will raise exceptions if used in illegal ways.”</p>
+
+<h1 id="references">References</h1>
+
+<p>[1] https://www.toptal.com/python/an-introduction-to-mocking-in-python</p>
+
+<p>[2] http://stackoverflow.com/questions/2665812/what-is-mocking</p>
+
+<p>[3] http://www.voidspace.org.uk/python/mock/mock.html</p>
+
+<p>[4] https://docs.python.org/3/library/unittest.mock.html</p>
+
+<p>[5] http://blog.thedigitalcatonline.com/blog/2016/03/06/python-mocks-a-gentle-introduction-part-1/#.WH9emXUrKkB</p>
+
+
+                <hr>
+
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/2017/01/11/hey-how-is-outreachy-going/" data-toggle="tooltip" data-placement="top" title="Hey, How is Outreachy going?">&larr; Previous Post</a>
+                    </li>
+                    
+                    
+                    <li class="next">
+                        <a href="/2017/02/13/about-outreachy/" data-toggle="tooltip" data-placement="top" title="About Outreachy">Next Post &rarr;</a>
+                    </li>
+                    
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</article>
+
+<hr>
+
+
+    <footer class="text-center">
+<div class="container">
+    <div class="row">
+        <div class="footer-col col-md-4">
+        </div>
+        <div class="footer-col col-md-4">
+            <div class="portfolio-head text-center">
+                <h4>Around the Web</h4>
+            </div>
+            <br>
+            <ul class="list-inline social-buttons">
+              <div style="text-align: center;">
+                <a style="padding: 4px;" href="https://github.com/mari-linhares"><i class="fa fa-github"></i></a>
+                <a style="padding: 4px;" href="https://www.linkedin.com/in/mariannelinharesm"><i class="fa fa-linkedin"></i></a>
+                <a style="padding: 4px;" href="https://www.facebook.com/marianne.linhares"><i class="fa fa-facebook"></i></a>
+                <a style="padding: 4px;" href="https://plus.google.com/u/0/110616469354929111219/"><i class="fa fa-google-plus"></i></a>
+                <a style="padding: 4px;" href="https://twitter.com/hereismari"><i class="fa fa-twitter"></i></a>
+              </div>
+            </ul>
+        </div>
+        <div class="footer-col col-md-4">
+        </div>
+    </div>
+</div>
+
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js "></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js "></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/clean-blog.min.js "></script>
+
+
+</body>
+
+</html>

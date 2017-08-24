@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="r">
+
+    <title>URI - Warm up Contest to OBI 2016 - first phase - Marianne Linhares Monteiro</title>
+
+    <link rel="canonical" href="http://localhost:4000/2016/06/13/uri-warm-up-contest-to-obi-2016-first-phase/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    
+    <link rel="stylesheet" href="/css/clean-blog.css">
+
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
+
+    <!-- Custom Fonts -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+
+<body>
+
+    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+        <div class="container topnav">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand topnav" href="http://mari-linhares.github.io/">Marianne Linhares Monteiro</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/blog/">Blog</a>
+                    </li>
+                    <li>
+                        <a href="/">About me</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/mari-linhares">Github</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+    <!-- Post Header -->
+<header class="intro-header" style="background-image: url('/img/sky2.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>URI - Warm up Contest to OBI 2016 - first phase</h1>
+                    
+                    <span class="meta">Posted by Marianne Linhares on June 13, 2016</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+				<h1 id="uri---warm-up-contest-to-obi-2016---first-phase">URI - Warm up Contest to OBI 2016 - first phase</h1>
+
+<p>Hey there, Recently happened the <a href="https://youtu.be/PjAmKjxww9k">Warm up Contest to OBI 2016</a> and I was one of the authors, it was a nice experience! I wrote 3 problems: <a href="https://www.urionlinejudge.com.br/judge/pt/problems/view/2064">Prant and the Indecision</a>, <a href="https://www.urionlinejudge.com.br/judge/pt/problems/view/2059">Odd, Even or Cheating</a> e <a href="https://www.urionlinejudge.com.br/judge/pt/problems/view/2068">Setting up a Date</a>. The Portuguese editorial is <a href="https://www.urionlinejudge.com.br/hosted/editorial/aquecimento-obi-2016-fase-1.html">in this link</a>. Soon may be an English editorial :)!</p>
+
+<p>Since, for now, an English editorial is not available, I’ll make a fast
+editorial for my problems, hope this helps!</p>
+
+<h2 id="odd-even-or-cheating">Odd, Even or Cheating</h2>
+
+<blockquote>
+  <p><em>By: Marianne Linhares</em></p>
+</blockquote>
+
+<p>In this problem the rules of the game must be well understood and correctly implemented. There are only 2 possibilities of result, player 1 wins or player 2 wins, a draw is not possible. The possible cases of player 1 to win are:</p>
+
+<ul>
+  <li>The numbers chosen doesn’t matter, player 1 cheats and player 2 doesn’t accuse player 1</li>
+  <li>The numbers chosen doesn’t matter, player 1 doesn’t cheat and player 2 accuses player 1</li>
+  <li>Player 1 chooses even, player 1 doesn’t cheat, player 2 doesn’t accuse player 1 and the sum of the chosen numbers is even</li>
+  <li>Player 1 chooses odd, player 1 doesn’t cheat, player 2 doesn’t accuse player 1 and the sum of the chosen numbers is odd
+If none of these cases happen then player 2 wins.</li>
+  <li><strong>Complexity</strong>: constant.</li>
+</ul>
+
+<h2 id="setting-up-a-date">Setting up a Date</h2>
+
+<blockquote>
+  <p><em>By: Marianne Linhares</em></p>
+</blockquote>
+
+<p>This problem can be solved using Geometric Probability. We can define the possible arrival times of Mel and Tob as points in the cartesian coordinate system, each possible time is a (x, y) inside the square determined by (0, 0) and (t2-t1, t2-t1) that represents the possible meeting interval. We also have the maximum wait time N as a constant that will determine the possible area of meeting. This whole situation can be represented below.</p>
+
+<p><img src="https://www.urionlinejudge.com.br/hosted/editorial/l.png" alt="l.png" />  </p>
+
+<p>So, the probability of happening a meet is defined by A1/AT. To get the irreductible fraction just divide each term by gcd(A1, AT).</p>
+
+<ul>
+  <li><strong>Complexity</strong>: basically constant.</li>
+</ul>
+
+<h2 id="prant-and-the-indecision">Prant and the Indecision</h2>
+
+<blockquote>
+  <p><em>By: Marianne Linhares</em></p>
+</blockquote>
+
+<p>The problem can be easily understood through the sample. But summarizing the
+problem situation: given a string of size <em>m</em> and <em>n</em> <em>changing letters
+operations</em> (1 ≤ m, n ≤ 100 000), such that a <em>changing letter operation</em>
+consists of changing all letters <em>a</em> to <em>b</em> (where <em>a</em> and <em>b</em> can be any
+letter in the alphabet) and all letters <em>b</em> to <em>a</em> in the current word,
+you should make a program that determines which word contains more favorite
+letters given the order of the operations.</p>
+
+<p>The difficulty of the problem is how to obtain such word in an efficient
+way, a solution that simulates the changes directly would be O(m * n)
+and this is not fast enough. A possible solution is instead of updating the
+entire word at each change just update the letters involved in the change.</p>
+
+<p>This can be done through an array that relates each letter to some other
+(in other words, it holds the current status of the changes), besides another
+array that holds how many times each letter appears in the word.
+Bellow there is an example of how a change could be simulated following the
+described implementation, where <em>ch</em> is the array that holds the “relations”
+and value holds the number of occurrences of each letter in the current word:</p>
+
+<pre><code>scanf(" %c %c", &amp;c1, &amp;c2);
+
+for(int j = 0; j &lt; 26; j++) {
+    if(ch[j] == c1) pos_c1 = j;
+    if(ch[j] == c2) pos_c2 = j;
+}
+
+aux = ch[pos_c1]; ch[pos_c1] = ch[pos_c2]; ch[pos_c2] = aux;
+aux = value[c1 - 'a']; value[c1 - 'a'] = value[c2 - 'a']; value[c2 - 'a'] = aux;
+</code></pre>
+
+<p>After updating these arrays you should verify if the sum of the occurrences of
+the favorite letters (you can get this information trough the value array in
+O(26) is the greatest until now, if this happens just copy the ch array into
+another so in the end you can print the word.</p>
+
+<ul>
+  <li><strong>Complexity</strong>: O(26 * n)</li>
+  <li><strong>Complexity using a map</strong>: O(26 * n * log(26)</li>
+</ul>
+
+<blockquote>
+  <p>PS: Another way to implement this is using a map. The solution will be more
+intuitive but a little less efficient(an irrelevant constant will be added).</p>
+</blockquote>
+
+
+                <hr>
+
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/2016/06/13/introduction-to-apache-kafka-in-portuguese/" data-toggle="tooltip" data-placement="top" title="Introduction to Apache Kafka in Portuguese">&larr; Previous Post</a>
+                    </li>
+                    
+                    
+                    <li class="next">
+                        <a href="/2016/06/14/intro-to-hadoop-and-how-to-install-hadoop-in-distributed-mode-portuguese/" data-toggle="tooltip" data-placement="top" title="Intro. to Hadoop and How to install Hadoop in Distributed mode - Portuguese">Next Post &rarr;</a>
+                    </li>
+                    
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</article>
+
+<hr>
+
+
+    <footer class="text-center">
+<div class="container">
+    <div class="row">
+        <div class="footer-col col-md-4">
+        </div>
+        <div class="footer-col col-md-4">
+            <div class="portfolio-head text-center">
+                <h4>Around the Web</h4>
+            </div>
+            <br>
+            <ul class="list-inline social-buttons">
+              <div style="text-align: center;">
+                <a style="padding: 4px;" href="https://github.com/mari-linhares"><i class="fa fa-github"></i></a>
+                <a style="padding: 4px;" href="https://www.linkedin.com/in/mariannelinharesm"><i class="fa fa-linkedin"></i></a>
+                <a style="padding: 4px;" href="https://www.facebook.com/marianne.linhares"><i class="fa fa-facebook"></i></a>
+                <a style="padding: 4px;" href="https://plus.google.com/u/0/110616469354929111219/"><i class="fa fa-google-plus"></i></a>
+                <a style="padding: 4px;" href="https://twitter.com/hereismari"><i class="fa fa-twitter"></i></a>
+              </div>
+            </ul>
+        </div>
+        <div class="footer-col col-md-4">
+        </div>
+    </div>
+</div>
+
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js "></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js "></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/clean-blog.min.js "></script>
+
+
+</body>
+
+</html>

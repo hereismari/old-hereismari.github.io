@@ -1,0 +1,219 @@
+/*-------------- General --------------*/
+html, body {
+  height: 100%;
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.2em;
+}
+
+h2 {
+  font-size: 20px;
+  font-family: 'Lato', sans-serif;
+}
+
+a {
+  color: black;
+}
+
+.text {
+  margin: 5%;
+  font-style: normal;
+}
+
+.center-vertical {
+  top: 50%;
+  margin-left: 5%;
+  position: relative;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+}
+
+/*-------------- Left content: contact + menu --------------*/
+
+#left {
+  width: 25%;
+  height: 100%;
+  position: fixed;
+  background: #E3E3FA;
+}
+
+#left a {
+  color: #9292EA;
+}
+
+#left a:hover {
+  color: #5858B6;
+}
+
+.container {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  width: 200px;
+  height: 400px;
+  margin-top: -200px; /* Half the height */
+  margin-left: -100px; /* Half the width */
+}
+
+.profile {
+  border-radius: 50%;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  margin-top: -100px; /* Half the height */
+  margin-left: -100px; /* Half the width */
+}
+
+.profile-links {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  height: 50px;
+  width: 199px;
+  margin-top: -25px; /* Half the height */
+  margin-left: -100px; /* Half the width */
+}
+
+
+/* -------------- Righ content ------------- */
+
+#right {
+  width: 75%;
+  height: auto;
+  position: absolute;
+  right: 0;
+}
+
+.header {
+  width: 100%;
+  height: 60px;
+  color: black;
+  font-family: 'Lato', sans-serif;
+  font-size: 28px;
+}
+
+/*--------- Card ------------*/
+.card {
+  margin: 12%;
+  border-width: 1px;
+  border-style: solid;
+  border-top: none;
+  border-color: #9292EA;
+  height: 635px;
+  width: 75%;
+}
+
+.card-header {
+  color: white;
+  height: 50px;
+  background-color: #9292EA;
+}
+
+.card-img-container {
+  height: 250px;
+}
+
+.card-img {
+  width: 100%;
+  height: 100%;
+}
+
+.card-tags {
+  margin: 5%;
+  height: 25px;
+}
+
+.card-tag {
+  border-radius: 8px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #f1e05a;
+  background-color: #f1e05a;
+  height: 100%;
+  font-size: 16px;
+  margin-right: 6px;
+}
+
+.card-tag-text {
+  text-align: center;
+}
+
+.card-description {
+  margin: 5%;
+  font-size: 14px;
+}
+
+.card-links {
+  text-align: center;
+}
+
+.card-links a {
+  text-decoration: none;
+}
+
+.button {
+  background-color: #9292EA;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: 150px;
+}
+
+.button:hover {
+  background-color: #5858B6;
+}
+
+
+.button > a {
+  text-decoration: none;
+}
+
+/*----------- Resume ----------*/
+.resume p {
+  text-align: justify;
+}
+
+.resume li {
+  margin-right: 10%;
+  text-align: justify;
+}
+
+.resume {
+  font-family: "Times New Roman";
+  margin: 5%;
+}
+
+/*-------------- Music -----------*/
+.music-box {
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    padding: 1%;
+    text-align: center;
+    width: 40%;
+    height: 450px;
+    border: solid 1px #EFEFEF;
+    height: 635px;
+    width: 75%;
+    margin: 12%;
+}
+
+.music-box:hover {
+    border: solid 1px #CCC;
+    -moz-box-shadow: 1px 1px 5px #999;
+    -webkit-box-shadow: 1px 1px 5px #999;
+        box-shadow: 1px 1px 5px #999;
+}
+
+.music-box img, iframe {
+  width: 100%;
+  height: 80%;
+}
+
+.music-box div {
+  padding: 10px;
+}

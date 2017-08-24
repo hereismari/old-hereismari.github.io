@@ -1,1 +1,13 @@
-theme: jekyll-theme-minimal
+# Site settings
+title: Marianne Linhares Monteiro
+header-img: img/forest.jpg
+email: mariannelinharesm@gmail.com
+description: "r"
+baseurl: ""
+url: "http://mari-linhares.github.io"
+
+# Build settings
+markdown: kramdown
+highlighter: pygments
+permalink: pretty
+paginate: 15

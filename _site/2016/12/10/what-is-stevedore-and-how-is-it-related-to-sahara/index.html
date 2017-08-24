@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="r">
+
+    <title>What is stevedore? and how is it related to Sahara? - Marianne Linhares Monteiro</title>
+
+    <link rel="canonical" href="http://localhost:4000/2016/12/10/what-is-stevedore-and-how-is-it-related-to-sahara/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    
+    <link rel="stylesheet" href="/css/clean-blog.css">
+
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
+
+    <!-- Custom Fonts -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+
+<body>
+
+    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+        <div class="container topnav">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand topnav" href="http://mari-linhares.github.io/">Marianne Linhares Monteiro</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/blog/">Blog</a>
+                    </li>
+                    <li>
+                        <a href="/">About me</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/mari-linhares">Github</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+    <!-- Post Header -->
+<header class="intro-header" style="background-image: url('/img/forest.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>What is stevedore? and how is it related to Sahara?</h1>
+                    
+                    <span class="meta">Posted by Marianne Linhares on December 10, 2016</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+				<h1 id="what-is-stevedore-and-how-is-it-related-to-sahara">what is stevedore? and how is it related to Sahara?</h1>
+
+<h3 id="before-we-start"><strong>Before we start…</strong></h3>
+
+<p>This post is considering that:</p>
+
+<ol>
+  <li>You know Sahara :)!</li>
+  <li>You don’t know stevedore :(, or you know it, but feel like you should know more about it or how it relates to Sahara
+So If you don’t know Sahara, I can introduce you two, here is <a href="http://docs.openstack.org/developer/sahara/">Sahara</a>. I’ll let you know each other.</li>
+</ol>
+
+<h3 id="first-what-is-stevedore"><strong>First, what is stevedore?</strong></h3>
+
+<p><em>“Python makes loading code dynamically easy, allowing you to configure and extend your application by discovering and loading extensions (“plugins”) at runtime. Many applications implement their own library for doing this, using <strong>import</strong> or importlib. stevedore avoids creating yet another extension mechanism by building on top of setuptools entry points. The code for managing entry points tends to be repetitive, though, so stevedore provides manager classes for implementing common patterns for using dynamically loaded extensions.”</em> If you’re not familiar with some concepts like _setuptools, entry points, _and how these concepts could be used to make the process of loading code dynamically easier, <a href="http://docs.pylonsproject.org/projects/pylons-webframework/en/latest/advanced_pylons/entry_points_and_plugins.html">this link</a> can be very helpful. So now we kind of know what is stevedore: <strong><em>“stevedore manage dynamic plugins for Python applications”</em></strong>. So stevedore is “independent” of OpenStack, it’s used by a lot of projects of OpenStack, but any Python code can use it :)!</p>
+
+<h3 id="okay-but-what-exactly-are-plugins-and-why-should-i-use-them"><strong>Okay… but what exactly are Plugins and why should I use them?</strong></h3>
+
+<p>Plugins are software components that add features to an existing computer program (core code)._ “When a program supports plug-ins, it enables <em><strong>_customization_</strong></em>”_. In other words, a plugin is a piece of code that is not a part of the core code, and because of this fact it can be added or removed easily. And it provides some features, services and operations in a more specific away. And we should use plugins because:</p>
+
+<ul>
+  <li>We already talked about customization, that means that using plugins you can have “different versions” of the code in an easier way. If I don’t need all the plugins I can install just the plugins and dependencies I need.</li>
+  <li>We will have an improved design. <em>“Keeping a separation between core and extension code encourages you to think more about abstractions in your design”</em>.</li>
+  <li><strong>“Plugins are a good way to implement device drivers and other versions of the Strategy pattern. The application can maintain generic core logic, and the plugin can handle the details for interfacing with an outside system or device.”</strong></li>
+  <li><strong>“Plugins also provide a convenient way to extend the feature set of an application by hooking new code into well-defined extension points. And having such an extensible system makes it easier for other developers to contribute to your project indirectly by providing add-on packages that are released separately.”</strong> </li>
+</ul>
+
+<h3 id="and-how-sahara-uses-stevedore"><strong>And how Sahara uses stevedore?</strong></h3>
+
+<p>Let’s open <a href="http://docs.openstack.org/developer/sahara/">Sahara</a> source code and have a look, here is the link: <a href="https://github.com/openstack/sahara">https://github.com/openstack/sahara</a> As we discussed plugins are loaded through entry points, the configuration can be seen in a file called <strong>setup.cfg</strong>, search for [entry_points], the syntax is:  <strong>namespace = name = module.path: importable_from_module</strong> By the name of the namespaces we can suppose that exists a driver responsible for SSH, console scripts are implemented with stevedore, cluster’s plugins, a Heat engine and some other things. Feel free to explore these namespaces on your own and see how they work! I may add more details about this with the time :)!</p>
+
+<p><strong>References</strong>:</p>
+
+<ul>
+  <li><a href="http://docs.openstack.org/developer/stevedore/">http://docs.openstack.org/developer/stevedore/ </a></li>
+  <li><a href="http://docs.pylonsproject.org/projects/pylons-webframework/en/latest/advanced_pylons/entry_points_and_plugins.html">http://docs.pylonsproject.org/projects/pylons-webframework/en/latest/advanced_pylons/entry_points_and_plugins.html </a></li>
+</ul>
+
+
+                <hr>
+
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/2016/12/10/welcome-to-outreachy/" data-toggle="tooltip" data-placement="top" title="Welcome to Outreachy!">&larr; Previous Post</a>
+                    </li>
+                    
+                    
+                    <li class="next">
+                        <a href="/2016/12/17/running-mapreduce-jobs-with-devstack-using-manila-swift-and-hdfs-as-data-sources-tutorial/" data-toggle="tooltip" data-placement="top" title="Running Sahara Jobs at DevStack and OpenStack - Tutorial">Next Post &rarr;</a>
+                    </li>
+                    
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</article>
+
+<hr>
+
+
+    <footer class="text-center">
+<div class="container">
+    <div class="row">
+        <div class="footer-col col-md-4">
+        </div>
+        <div class="footer-col col-md-4">
+            <div class="portfolio-head text-center">
+                <h4>Around the Web</h4>
+            </div>
+            <br>
+            <ul class="list-inline social-buttons">
+              <div style="text-align: center;">
+                <a style="padding: 4px;" href="https://github.com/mari-linhares"><i class="fa fa-github"></i></a>
+                <a style="padding: 4px;" href="https://www.linkedin.com/in/mariannelinharesm"><i class="fa fa-linkedin"></i></a>
+                <a style="padding: 4px;" href="https://www.facebook.com/marianne.linhares"><i class="fa fa-facebook"></i></a>
+                <a style="padding: 4px;" href="https://plus.google.com/u/0/110616469354929111219/"><i class="fa fa-google-plus"></i></a>
+                <a style="padding: 4px;" href="https://twitter.com/hereismari"><i class="fa fa-twitter"></i></a>
+              </div>
+            </ul>
+        </div>
+        <div class="footer-col col-md-4">
+        </div>
+    </div>
+</div>
+
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js "></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js "></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/clean-blog.min.js "></script>
+
+
+</body>
+
+</html>
