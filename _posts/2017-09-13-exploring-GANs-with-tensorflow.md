@@ -54,7 +54,7 @@ will be so good that the discriminator will have to guess
 
 This is a simple GAN architecture using fashion MNIST as example.
 
-![](https://github.com/mari-linhares/DeepLearning/blob/master/GAN-fashion-MNIST/imgs/vanilla_gan_arch.png)
+![](http://github.com/mari-linhares/DeepLearning/blob/master/GAN-fashion-MNIST/imgs/vanilla_gan_arch.png)
 
 Check [GANs introduction by Ian Goodfellow](https://www.youtube.com/watch?v=RvgYvHyT15E)  
 
@@ -122,14 +122,14 @@ about this vanilla implementation.
 
 Here's a diagram of the network architecure:
 
-![](https://github.com/mari-linhares/DeepLearning/blob/master/GAN-fashion-MNIST/imgs/vanilla_gan_detailed_arch.png)
+![](http://github.com/mari-linhares/DeepLearning/blob/master/GAN-fashion-MNIST/imgs/vanilla_gan_detailed_arch.png)
 
 And an example of the samples generated while training with fashion MNIST dataset!
 
-![](https://github.com/mari-linhares/DeepLearning/blob/master/GAN-fashion-MNIST/imgs/fashion-mnist/train.gif)
+![](http://github.com/mari-linhares/DeepLearning/blob/master/GAN-fashion-MNIST/imgs/fashion-mnist/train.gif)
 
 ## Refereneces
 
-References can be found [here](https://github.com/mari-linhares/DeepLearning#gans).
+References can be find [here](https://github.com/mari-linhares/DeepLearning#gans).
 
 Hope this helps somehow, have a nice day!
