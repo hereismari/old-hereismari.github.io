@@ -128,8 +128,9 @@ And an example of the samples generated while training with fashion MNIST datase
 
 ![](http://github.com/mari-linhares/DeepLearning/blob/master/GAN-fashion-MNIST/imgs/fashion-mnist/train.gif)
 
-## Refereneces
+## References
 
 References can be find [here](https://github.com/mari-linhares/DeepLearning#gans).
 
 Hope this helps somehow, have a nice day!
+
