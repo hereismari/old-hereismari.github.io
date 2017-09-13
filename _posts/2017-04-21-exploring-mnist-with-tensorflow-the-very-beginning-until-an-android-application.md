@@ -1,5 +1,6 @@
 ---
-title: Exploring MNIST with TensorFlow, from the very beginning, to an Android App
+title: Exploring MNIST with TensorFlow
+subtitle: From the very beginning to an Android App
 author: Marianne Linhares
 header-img: img/tensorflow.png
 date: 2017-04-21
@@ -7,7 +8,7 @@ tags: [Post, TensorFlow, DeepLearning]
 layout: post
 ---
 
-# Exploring MNIST with TensorFlow, from the very beginning, to an Android Application
+# Exploring MNIST with TensorFlow, from the very beginning to an Android Application
 
 Hi everyone, I've recently started to study TensorFlow, and is such a great
 framework and TensorBoard is amazing. But I'm not here to say how much awesome
