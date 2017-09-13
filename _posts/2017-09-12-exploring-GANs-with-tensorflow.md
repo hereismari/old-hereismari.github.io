@@ -3,15 +3,16 @@ title: Load up your GANs, bring your friends
 subtitle: it's fun to lose and to pretend
 author: Marianne Linhares
 header-img: img/tensorflow.png
-date: 2017-09-12
+date: 2017-09-13
 tags: [Post, TensorFlow, DeepLearning, GANs]
 layout: post
 ---
 
 # Load up your GANs (Generative Adversarial Networks)
 
-GANs (Generative Adversarial Networks) are currently a very hot Deep Learning topic. I've took sometime this week to learn more
-about them, and here you can find some of my discovers.
+GANs (Generative Adversarial Networks) are currently a very hot Deep Learning topic.
+I've took sometime this week to learn more about them, and here you can
+find some of my discovers.
 
 My plan was to find out:
 
@@ -77,9 +78,9 @@ as an unsupervised “density estimator”, i.e. a contrast function
 that gives us a low value for data and higher output for everything
 else. This discriminator has to develop a good internal representation
 of the data to solve this problem properly. It can then be used as
-a feature extractor for a classifier, for example.
+a feature extractor for a classifier, for example.*
 
-But perhaps more interestingly, the generator can be seen as parameterizing
+*But perhaps more interestingly, the generator can be seen as parameterizing
 the complicated surface of real data: give it a vector Z, and it maps it
 to a point on the data manifold. There are papers where people do amazing
 things with this, like generating pictures of bedrooms, doing arithmetic on
@@ -111,7 +112,7 @@ about the topic.
 
 ## 5. Personal Project
 
-You can check the code [here](https://github.com/mari-linhares/DeepLearning/tree/master/GAN-fashion-MNIST)
+You can check the code [here](https://github.com/mari-linhares/DeepLearning/tree/master/GAN-fashion-MNIST).
 
 I refactored and made some improvements on a very simple implementation
 available [here](https://github.com/wiseodd/generative-models/blob/master/GAN/vanilla_gan/gan_tensorflow.py)
@@ -127,9 +128,8 @@ And an example of the samples generated while training with fashion MNIST datase
 
 ![](https://github.com/mari-linhares/DeepLearning/blob/master/GAN-fashion-MNIST/imgs/fashion-mnist/train.gif)
 
-
 ## Refereneces
 
-[Here](https://github.com/mari-linhares/DeepLearning#gans)
+References can be found [here](https://github.com/mari-linhares/DeepLearning#gans).
 
 Hope this helps somehow, have a nice day!
