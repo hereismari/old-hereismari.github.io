@@ -34,11 +34,11 @@ a {
   width: 25%;
   height: 100%;
   position: fixed;
-  background: #E3E3FA;
+  background: white;
 }
 
 #left a {
-  color: #9292EA;
+  color: black;
 }
 
 #left a:hover {
@@ -187,6 +187,11 @@ a {
 .resume {
   font-family: "Times New Roman";
   margin: 5%;
+}
+
+/* ------------- ML GDE ----------- */
+.inline-block {
+  display: inline-block;
 }
 
 /*-------------- Music -----------*/
