@@ -11,6 +11,7 @@ h2 {
   font-family: 'Lato', sans-serif;
 }
 
+
 a {
   color: black;
 }
@@ -100,7 +101,7 @@ a {
   border-width: 1px;
   border-style: solid;
   border-top: none;
-  border-color: #9292EA;
+  border-color: #d4d4d4;
   height: 635px;
   width: 75%;
 }
@@ -108,7 +109,11 @@ a {
 .card-header {
   color: white;
   height: 50px;
-  background-color: #9292EA;
+  background-color: #d4d4d4;
+}
+
+.card-header h2 {
+  color: black;
 }
 
 .card-img-container {
@@ -153,8 +158,13 @@ a {
   text-decoration: none;
 }
 
+
+.card-links iframe {
+  padding-left: 20%;
+}
+
 .button {
-  background-color: #9292EA;
+  background-color: #d4d4d4;
   border: none;
   color: white;
   padding: 15px 32px;
