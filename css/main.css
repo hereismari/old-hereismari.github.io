@@ -19,6 +19,7 @@ a {
 .text {
   margin: 5%;
   font-style: normal;
+  width: 60%;
 }
 
 .center-vertical {
