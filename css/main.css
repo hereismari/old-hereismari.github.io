@@ -198,6 +198,8 @@ a {
 .resume {
   font-family: "Times New Roman";
   margin: 5%;
+  margin-top: 2%;
+  width: 70%;
 }
 
 /* ------------- ML GDE ----------- */
