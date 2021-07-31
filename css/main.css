@@ -8,7 +8,7 @@ body {
 }
 
 h2 {
-  font-size: 20px;
+  font-size: 15px;
   font-family: 'Lato', sans-serif;
 }
 
@@ -19,6 +19,7 @@ a {
 .text {
   margin: 5%;
   font-style: normal;
+  font-family: monospace;
   width: 60%;
 }
 
@@ -240,7 +241,7 @@ iframe {
 .cards-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   padding: 50px;
   gap: 30px;
 }
@@ -250,16 +251,30 @@ iframe {
   flex-direction: column;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
-  width: 350px;
+  width: 320px;
+  height: 400px;
 }
 
 .cards-container .card-container .card-image {
-  height: 250px;
+  height: 220px;
+  width: 100%;
+  object-position: center center;
 }
 
 .cards-container .card-container .card-image img {
   height: 100%;
   width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cards-container .card-container .card-title {
+  color: #3c4858;
+  text-align: justify;
+  font-size: 14px;
+  padding: 0 20px;
+  height: 40px;
 }
 
 .cards-container .card-container .card-content {
@@ -271,15 +286,10 @@ iframe {
   overflow: auto;
 }
 
-.cards-container .card-container .card-footer {
+.cards-container .card-container .card-link {
   display: flex;
-  justify-content: space-around;
-  border-top: 1px solid rgba(0, 0, 0, 0.125);
-  height: 38px;
-}
-
-.cards-container .card-container .card-footer .card-link {
-  display: flex;
-  align-items: center;
-  width: 80px;
+  align-items: flex-start;
+  text-align: justify;
+  padding: 5px 5px 5px 20px;
+  height: 25px; width: 80px;
 }
