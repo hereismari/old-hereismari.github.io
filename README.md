@@ -1,1 +1,1 @@
-**Source code for [my personal website](https://hereismari.github.io)**
+## DEPRECATED - see hereismari.github.io for new repo
